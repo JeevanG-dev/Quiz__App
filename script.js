@@ -1,68 +1,197 @@
-const questions = [
-  {
-    question: "What is the capital city of Nepal?",
-    answers: [
-      { text: "Kathmandu", correct: true },
-      { text: "Delhi", correct: false },
-      { text: "Pokhera", correct: false },
-      { text: "london", correct: false },
-    ],
-  },
-  {
-    question: "What is the fullform of SSR?",
-    answers: [
-      { text: "Socket side rendering", correct: false },
-      { text: "Smart source rendering", correct: false },
-      { text: "Server side rendering", correct: true },
-      { text: "None of Above", correct: false },
-    ],
-  },
-  {
-    question: "What is the national foode of Nepal?",
-    answers: [
-      { text: "momo", correct: false },
-      { text: "Daal Bhat", correct: true },
-      { text: "Sukuti", correct: false },
-      { text: "Choila", correct: false },
-    ],
-  },
-  {
-    question: "Where did sushi originate?",
-    answers: [
-      { text: "Kathmandu", correct: false },
-      { text: "Thailand", correct: false },
-      { text: "Korea", correct: false },
-      { text: "Japan", correct: true },
-    ],
-  },
-  {
-    question: "What meat is used in a shepherd's pie?",
-    answers: [
-      { text: "Lamb", correct: true },
-      { text: "Beef", correct: false },
-      { text: "Chicken", correct: false },
-      { text: "Goat", correct: false },
-    ],
-  },
-  {
-    question: "Which country is credited with inventing ice cream?",
-    answers: [
-      { text: "UK", correct: false },
-      { text: "China", correct: true },
-      { text: "USA", correct: false },
-      { text: "Scotland", correct: false },
-    ],
-  },
-];
+const questions = {
+  animals: [
+    {
+      question: "What is the capital city of Nepal?",
+      answers: [
+        { text: "Kathmandu", correct: true },
+        { text: "Delhi", correct: false },
+        { text: "Pokhera", correct: false },
+        { text: "london", correct: false },
+      ],
+    },
+    {
+      question: "What is the fullform of SSR?",
+      answers: [
+        { text: "Socket side rendering", correct: false },
+        { text: "Smart source rendering", correct: false },
+        { text: "Server side rendering", correct: true },
+        { text: "None of Above", correct: false },
+      ],
+    },
+    {
+      question: "What is the national foode of Nepal?",
+      answers: [
+        { text: "momo", correct: false },
+        { text: "Daal Bhat", correct: true },
+        { text: "Sukuti", correct: false },
+        { text: "Choila", correct: false },
+      ],
+    },
+    {
+      question: "Where did sushi originate?",
+      answers: [
+        { text: "Kathmandu", correct: false },
+        { text: "Thailand", correct: false },
+        { text: "Korea", correct: false },
+        { text: "Japan", correct: true },
+      ],
+    },
+    {
+      question: "What meat is used in a shepherd's pie?",
+      answers: [
+        { text: "Lamb", correct: true },
+        { text: "Beef", correct: false },
+        { text: "Chicken", correct: false },
+        { text: "Goat", correct: false },
+      ],
+    },
+    {
+      question: "Which country is credited with inventing ice cream?",
+      answers: [
+        { text: "UK", correct: false },
+        { text: "China", correct: true },
+        { text: "USA", correct: false },
+        { text: "Scotland", correct: false },
+      ],
+    },
+  ],
+  bodyParts: [
+    {
+      question: "What is the capital city of Nepal?",
+      answers: [
+        { text: "Kathmandu", correct: true },
+        { text: "Delhi", correct: false },
+        { text: "Pokhera", correct: false },
+        { text: "london", correct: false },
+      ],
+    },
+    {
+      question: "What is the fullform of SSR?",
+      answers: [
+        { text: "Socket side rendering", correct: false },
+        { text: "Smart source rendering", correct: false },
+        { text: "Server side rendering", correct: true },
+        { text: "None of Above", correct: false },
+      ],
+    },
+    {
+      question: "What is the national foode of Nepal?",
+      answers: [
+        { text: "momo", correct: false },
+        { text: "Daal Bhat", correct: true },
+        { text: "Sukuti", correct: false },
+        { text: "Choila", correct: false },
+      ],
+    },
+    {
+      question: "Where did sushi originate?",
+      answers: [
+        { text: "Kathmandu", correct: false },
+        { text: "Thailand", correct: false },
+        { text: "Korea", correct: false },
+        { text: "Japan", correct: true },
+      ],
+    },
+    {
+      question: "What meat is used in a shepherd's pie?",
+      answers: [
+        { text: "Lamb", correct: true },
+        { text: "Beef", correct: false },
+        { text: "Chicken", correct: false },
+        { text: "Goat", correct: false },
+      ],
+    },
+    {
+      question: "Which country is credited with inventing ice cream?",
+      answers: [
+        { text: "UK", correct: false },
+        { text: "China", correct: true },
+        { text: "USA", correct: false },
+        { text: "Scotland", correct: false },
+      ],
+    },
+  ],
+  science: [
+    {
+      question: "What is the capital city of Nepal?",
+      answers: [
+        { text: "Kathmandu", correct: true },
+        { text: "Delhi", correct: false },
+        { text: "Pokhera", correct: false },
+        { text: "london", correct: false },
+      ],
+    },
+    {
+      question: "What is the fullform of SSR?",
+      answers: [
+        { text: "Socket side rendering", correct: false },
+        { text: "Smart source rendering", correct: false },
+        { text: "Server side rendering", correct: true },
+        { text: "None of Above", correct: false },
+      ],
+    },
+    {
+      question: "What is the national foode of Nepal?",
+      answers: [
+        { text: "momo", correct: false },
+        { text: "Daal Bhat", correct: true },
+        { text: "Sukuti", correct: false },
+        { text: "Choila", correct: false },
+      ],
+    },
+    {
+      question: "Where did sushi originate?",
+      answers: [
+        { text: "Kathmandu", correct: false },
+        { text: "Thailand", correct: false },
+        { text: "Korea", correct: false },
+        { text: "Japan", correct: true },
+      ],
+    },
+    {
+      question: "What meat is used in a shepherd's pie?",
+      answers: [
+        { text: "Lamb", correct: true },
+        { text: "Beef", correct: false },
+        { text: "Chicken", correct: false },
+        { text: "Goat", correct: false },
+      ],
+    },
+    {
+      question: "Which country is credited with inventing ice cream?",
+      answers: [
+        { text: "UK", correct: false },
+        { text: "China", correct: true },
+        { text: "USA", correct: false },
+        { text: "Scotland", correct: false },
+      ],
+    },
+  ],
+};
 
 const questionArea = document.getElementById("question");
 const answersButtons = document.getElementById("answer-buttons");
 const nextBtn = document.getElementById("next-btn");
+const quizBox = document.querySelector(".quiz");
+const categories = document.querySelector(".categories");
 
 let currentQuestionIndex = 0;
 let score = 0;
+let categorySelected = [];
+
+document.querySelectorAll(".category").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    let selectedItem = btn.dataset.category;
+    categorySelected = questions[selectedItem];
+
+    startQuiz();
+  });
+});
 
 function startQuiz() {
+  categories.style.display = "none";
+  quizBox.style.display = "block";
+
   currentQuestionIndex = 0;
   score = 0;
   nextBtn.innerHTML = "Next";
@@ -72,7 +201,7 @@ function startQuiz() {
 function showQuestions() {
   resetState();
 
-  let currentQuestion = questions[currentQuestionIndex];
+  let currentQuestion = categorySelected[currentQuestionIndex];
   let questionNo = currentQuestionIndex + 1;
 
   questionArea.innerHTML = questionNo + "." + currentQuestion.question;
@@ -121,18 +250,15 @@ function selectAnswer(e) {
 }
 
 function showScore() {
-
-    resetState()
-  questionArea.innerHTML =
-    `Your Score is ` + score + " out of " + questions.length;
-    nextBtn.innerHTML = "Start new Game"
-  nextBtn.style.display = "block"
-
+  resetState();
+  questionArea.innerHTML = `Your Score is ` + score + " out of " + categorySelected.length;
+  nextBtn.innerHTML = "Start new Game";
+  nextBtn.style.display = "block";
 }
 
 function handleOnClick() {
   currentQuestionIndex++;
-  if (currentQuestionIndex < questions.length) {
+  if (currentQuestionIndex < categorySelected.length) {
     showQuestions();
   } else {
     showScore();
@@ -140,11 +266,10 @@ function handleOnClick() {
 }
 
 nextBtn.addEventListener("click", () => {
-  if (currentQuestionIndex < questions.length) {
+  if (currentQuestionIndex < categorySelected.length) {
     handleOnClick();
   } else {
-    startQuiz();
+    quizBox.style.display = "none";
+    categories.style.display = "block";
   }
 });
-
-startQuiz();
