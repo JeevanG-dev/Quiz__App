@@ -1,5 +1,5 @@
 const questions = {
-  animals: [
+  foods: [
     {
       question: "What is the capital city of Nepal?",
       answers: [
@@ -167,6 +167,100 @@ const questions = {
       ],
     },
   ],
+  animals: [
+    {
+    question:"What is the fastest land animal?",
+    answers:[
+     {text:'Cheetah', correct:true},
+     {text:'lion', correct:false},
+     {text:'Horse', correct:false},
+     {text:'Kangaroo', correct:false},
+    ]
+  },
+  {
+    question:"Which mammal is known to have the most powerful bite?",
+    answers:[
+     {text:'Lion', correct:false},
+     {text:'Hippopotamus', correct:true},
+     {text:'Shark', correct:false},
+     {text:'Tiger', correct:false},
+    ]
+  },
+  {
+    question:"Which marine animal is known as the `unicorn of the sea`?",
+    answers:[
+     {text:'Dolphin', correct:false},
+     {text:'Swordfish', correct:false},
+     {text:'Narwhal', correct:true},
+     {text:'Whale', correct:false},
+    ]
+  },
+  {
+    question:"What is a group of lions called?",
+    answers:[
+     {text:'Herd', correct:false},
+     {text:'Pack', correct:false},
+     {text:'Flock', correct:false},
+     {text:'Pride', correct:true},
+    ]
+  },
+  {
+    question:"Which animal never sleeps?",
+    answers:[
+     {text:'Starfish', correct:false},
+     {text:'Jellyfish', correct:true},
+     {text:'Whale', correct:false},
+     {text:'Dolphin', correct:false},
+    ]
+  },
+  {
+    question:"What is the largest species of shark?",
+    answers:[
+     {text:'Great White Shark', correct:false},
+     {text:'Whale Shark', correct:true},
+     {text:'Tiger Shark', correct:false},
+     {text:'Hammerhead Shark', correct:false},
+    ]
+  },
+  {
+    question:"What type of animal is a barracuda?",
+    answers:[
+     {text:'Bird', correct:false},
+     {text:'Mammal', correct:false},
+     {text:'Fish', correct:true},
+     {text:'Reptile', correct:false},
+    ]
+  },
+  {
+    question:"What is the largest species of turtle?",
+    answers:[
+     {text:'Leatherback Turtle ', correct:true},
+     {text:'Green Turtle', correct:false},
+     {text:'Hawksbill', correct:false},
+     {text:'Loggerhead', correct:false},
+    ]
+  },
+  {
+    question:"Which mammal has no vocal cords?",
+    answers:[
+     {text:'Elephant', correct:false},
+     {text:'Whale', correct:false},
+     {text:'Hawksbill', correct:false},
+     {text:'Giraffe', correct:true},
+    ]
+  },
+  {
+    question:"Which animal has the most legs?",
+    answers:[
+     {text:'Centipede', correct:false},
+     {text:'Tarantula', correct:false},
+     {text:'Millipede', correct:true},
+     {text:'Crustacean', correct:false},
+    ]
+  },
+
+
+],
 };
 
 const questionArea = document.getElementById("question");
@@ -251,7 +345,8 @@ function selectAnswer(e) {
 
 function showScore() {
   resetState();
-  questionArea.innerHTML = `Your Score is ` + score + " out of " + categorySelected.length;
+  questionArea.innerHTML =
+    `Your Score is ` + score + " out of " + categorySelected.length;
   nextBtn.innerHTML = "Start new Game";
   nextBtn.style.display = "block";
 }
